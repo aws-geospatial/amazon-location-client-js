@@ -2,17 +2,20 @@
 
 Distribution of the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) containing the [Amazon Location client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) to be used as a script for the browser.
 
-**This package is not intended to be installed and used from NPM. [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) from the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) should be used instead.**
-
 # Installation
 
+## Usage with the browser
 Add the script to an HTML file for usage directly in the browser.
 
 ```html
 <script src="https://www.unpkg.com/@aws/amazon-location-client@%5E1.0.0/dist/amazonLocationClient.js"></script>
 ```
 
+## Usage with modules
+We recommend to use [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) from the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) for the full benefit of modularized AWS SDK.
+
 # Usage
+
 All of the functions will be under `amazonLocationClient`.
 
 This example uses the Amazon Location Client to make a request that that authenticates using Amazon Cognito.
