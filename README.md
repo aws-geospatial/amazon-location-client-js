@@ -5,13 +5,15 @@ Distribution of the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-j
 # Installation
 
 ## Usage with the browser
+
 Add the script to an HTML file for usage directly in the browser.
 
 ```html
-<script src="https://www.unpkg.com/@aws/amazon-location-client@%5E1.0.0/dist/amazonLocationClient.js"></script>
+<script src="https://www.unpkg.com/@aws/amazon-location-client@1.x/dist/amazonLocationClient.js"></script>
 ```
 
 ## Usage with modules
+
 We recommend to use [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) from the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) for the full benefit of modularized AWS SDK.
 
 # Usage
@@ -22,7 +24,7 @@ This example uses the Amazon Location Client to make a request that that authent
 
 ```html
 <!-- Importing Amazon Location Client -->
-<script src="https://www.unpkg.com/@aws/amazon-location-client@%5E1.0.0/dist/amazonLocationClient.js"></script>
+<script src="https://www.unpkg.com/@aws/amazon-location-client@1.x/dist/amazonLocationClient.js"></script>
 ```
 
 ```javascript
@@ -42,14 +44,13 @@ const command = new amazonLocationClient.CalculateRouteCommand(input);
 const response = await client.send(command);
 ```
 
-
 We can further simplify the authentication process by introducing the [Amazon Location authentication helper utility library](https://github.com/aws-geospatial/amazon-location-utilities-auth-helper-js)
 
 ```html
 <!-- Importing Amazon Location Client -->
-<script src="https://www.unpkg.com/@aws/amazon-location-client@%5E1.0.0/dist/amazonLocationClient.js"></script>
+<script src="https://www.unpkg.com/@aws/amazon-location-client@1.x/dist/amazonLocationClient.js"></script>
 <!-- Importing the Amazon Location authentication helper utility library -->
-<script src="https://www.unpkg.com/@aws/amazon-location-utilities-auth-helper@%5E1.0.0/dist/amazonLocationAuthHelper.js"></script>
+<script src="https://www.unpkg.com/@aws/amazon-location-utilities-auth-helper@1.x/dist/amazonLocationAuthHelper.js"></script>
 ```
 
 ```javascript
@@ -68,10 +69,12 @@ const response = await client.send(command);
 ```
 
 # Documentation
-Refer to [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) for documentation. 
+
+Refer to [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) for documentation.
 
 Prefix the class from the @aws-sdk/client-location documentation with `amazonLocationClient.` when using this Amazon Location Client library.
- * For example, `const command = new CalculateRouteCommand(input);` should be used as `const command = new amazonLocationClient.CalculateRouteCommand(input);`
+
+- For example, `const command = new CalculateRouteCommand(input);` should be used as `const command = new amazonLocationClient.CalculateRouteCommand(input);`
 
 # Getting Help
 
