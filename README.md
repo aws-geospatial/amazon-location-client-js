@@ -2,9 +2,9 @@
 
 Distribution of the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) containing the [Amazon Location client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [credential providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) to be used as a script for the browser.
 
-# Installation
+## Installation
 
-## Usage with the browser
+### Usage with the browser
 
 Add the script to an HTML file for usage directly in the browser.
 
@@ -12,11 +12,11 @@ Add the script to an HTML file for usage directly in the browser.
 <script src="https://www.unpkg.com/@aws/amazon-location-client@1.x/dist/amazonLocationClient.js"></script>
 ```
 
-## Usage with modules
+### Usage with modules
 
 We recommend to use [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) from the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) for the full benefit of modularized AWS SDK.
 
-# Usage
+## Usage
 
 All of the functions will be under `amazonLocationClient`.
 
@@ -68,7 +68,7 @@ const command = new amazonLocationClient.CalculateRouteCommand(input);
 const response = await client.send(command);
 ```
 
-# Documentation
+## Documentation
 
 Refer to [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) for documentation.
 
@@ -76,7 +76,7 @@ Prefix the class from the @aws-sdk/client-location documentation with `amazonLoc
 
 - For example, `const command = new CalculateRouteCommand(input);` should be used as `const command = new amazonLocationClient.CalculateRouteCommand(input);`
 
-# Getting Help
+## Getting Help
 
 The best way to interact with our team is through GitHub.
 You can [open an issue](https://github.com/aws-geospatial/amazon-location-client-js/issues/new/choose) and choose from one of our templates for
@@ -89,11 +89,11 @@ Please make sure to check out our resources too before opening an issue:
 
 - Our [Changelog](https://github.com/aws-geospatial/amazon-location-client-js/blob/master/CHANGELOG.md) for recent changes.
 
-# Contributing
+## Contributing
 
 We welcome community contributions and pull requests. See [CONTRIBUTING.md](https://github.com/aws-geospatial/amazon-location-client-js/blob/master/CONTRIBUTING.md) for information on how to set up a development environment and submit code.
 
-# License
+## License
 
 Amazon Location JavaScript Client is distributed under the
 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0),
