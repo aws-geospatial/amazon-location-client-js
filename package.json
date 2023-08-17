@@ -25,7 +25,10 @@
   "engines": {
     "node": ">= 16.0.0"
   },
-  "main": "./dist/amazonLocationClient.js",
+  "browser": "./dist/amazonLocationClient.js",
+  "main": "./dist/cjs/amazonLocationClient.cjs",
+  "module": "./src/index.mjs",
+  "unpkg": "./dist/amazonLocationClient.js",
   "type": "module",
   "files": [
     "./LICENSE.txt",
