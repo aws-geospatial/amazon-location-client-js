@@ -50,7 +50,7 @@ We can further simplify the authentication process by introducing the [Amazon Lo
 <!-- Import the Amazon Location Client -->
 <script src="https://www.unpkg.com/@aws/amazon-location-client@1"></script>
 <!-- Import the Amazon Location authentication helper utility library -->
-<script src="https://www.unpkg.com/@aws/amazon-location-utilities-auth-helper@1.x/dist/amazonLocationAuthHelper.js"></script>
+<script src="https://www.unpkg.com/@aws/amazon-location-utilities-auth-helper@1"></script>
 ```
 
 ```javascript
