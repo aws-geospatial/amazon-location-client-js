@@ -47,13 +47,13 @@
   },
   "lint-staged": {},
   "dependencies": {
-    "@aws-sdk/client-location": "^3.0.0",
-    "@aws-sdk/credential-providers": "^3.0.0"
+    "@aws-sdk/client-location": "^3.621.0",
+    "@aws-sdk/credential-providers": "^3.621.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.2",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "rollup": "^3.22.0"
