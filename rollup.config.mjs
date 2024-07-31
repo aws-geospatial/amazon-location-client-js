@@ -45,6 +45,7 @@ export default [
       {
         file: "dist/amazonLocationClient.js",
         format: "umd",
+        inlineDynamicImports: true,
         banner,
         name: "amazonLocationClient",
       },
