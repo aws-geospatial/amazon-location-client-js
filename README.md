@@ -1,6 +1,6 @@
 # Amazon Location JavaScript Client
 
-This is a distribution of the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) containing the [Amazon Location client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [credential providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) intended for use in browsers.
+This is a distribution of the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) containing the [Amazon Location client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/), our [authentication helper](https://github.com/aws-geospatial/amazon-location-utilities-auth-helper-js), and [credential providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) intended for use in browsers.
 
 ## Installation
 
@@ -9,7 +9,7 @@ This is a distribution of the [AWS SDK for JavaScript v3](https://github.com/aws
 Add the script to an HTML file for usage directly in the browser.
 
 ```html
-<script src="https://www.unpkg.com/@aws/amazon-location-client@1"></script>
+<script src="https://cdn.jsdelivr.net/npm/@aws/amazon-location-client@1"></script>
 ```
 
 ### Usage with modules
@@ -20,49 +20,23 @@ We recommend using [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJav
 
 All functions are available under the `amazonLocationClient` global.
 
-This example uses the Amazon Location Client to make a request that authenticates using Amazon Cognito.
+This example uses the Amazon Location Client to make a request that authenticates using an API key.
 
 ```html
 <!-- Import the Amazon Location Client -->
-<script src="https://www.unpkg.com/@aws/amazon-location-client@1"></script>
+<script src="https://cdn.jsdelivr.net/npm/@aws/amazon-location-client@1"></script>
 ```
 
 ```javascript
-const identityPoolId = "<Identity Pool ID>";
+// Create an authentication helper instance using an API key
+const authHelper = await amazonLocationClient.withAPIKey("<API Key>");
 
-const client = new amazonLocationClient.LocationClient({
-  region: "<Region>", // region containing Amazon Location resources
-  credentials: amazonLocationClient.fromCognitoIdentityPool({
-    clientConfig: {
-      region: "<Region>", // region containing the Amazon Cognito Identity Pool
-    },
-    identityPoolId
-  })
-});
-const input = { ... };
-const command = new amazonLocationClient.CalculateRouteCommand(input);
-const response = await client.send(command);
-```
-
-We can further simplify the authentication process by introducing the [Amazon Location authentication helper utility library](https://github.com/aws-geospatial/amazon-location-utilities-auth-helper-js)
-
-```html
-<!-- Import the Amazon Location Client -->
-<script src="https://www.unpkg.com/@aws/amazon-location-client@1"></script>
-<!-- Import the Amazon Location authentication helper utility library -->
-<script src="https://www.unpkg.com/@aws/amazon-location-utilities-auth-helper@1"></script>
-```
-
-```javascript
-// Create an authentication helper instance using credentials from Cognito
-const authHelper = await amazonLocationAuthHelper.withIdentityPoolId("<Identity Pool ID>");
-
-const client = new amazonLocationClient.LocationClient({
+const client = new amazonLocationClient.GeoPlacesClient({
   region: "<Region>", // Region containing Amazon Location resource
-  ...authHelper.getLocationClientConfig(), // Provides credentials obtained via Amazon Cognito
+  ...authHelper.getLocationClientConfig(), // Provides credentials obtained via API key
 });
 const input = { ... };
-const command = new amazonLocationClient.CalculateRouteCommand(input);
+const command = new amazonLocationClient.routes.CalculateRouteCommand(input);
 const response = await client.send(command);
 ```
 
@@ -85,11 +59,11 @@ If you have a support plan with [AWS Support](https://aws.amazon.com/premiumsupp
 
 Please make sure to check out the following resources before opening an issue:
 
-- Our [Changelog](https://github.com/aws-geospatial/amazon-location-client-js/blob/master/CHANGELOG.md) for recent changes.
+- Our [Changelog](CHANGELOG.md) for recent changes.
 
 ## Contributing
 
-We welcome community contributions and pull requests. See [CONTRIBUTING.md](https://github.com/aws-geospatial/amazon-location-client-js/blob/master/CONTRIBUTING.md) for information on how to set up a development environment and submit code.
+We welcome community contributions and pull requests. See [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to set up a development environment and submit code.
 
 ## License
 

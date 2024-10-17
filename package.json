@@ -47,15 +47,19 @@
   },
   "lint-staged": {},
   "dependencies": {
+    "@amzn/geomaps-client": "file:temp_clients/amzn-geomaps-client-0.0.1.tgz",
+    "@amzn/geoplaces-client": "file:temp_clients/amzn-geoplaces-client-0.0.1.tgz",
+    "@amzn/georoutes-client": "file:temp_clients/amzn-georoutes-client-0.0.1.tgz",
+    "@aws/amazon-location-utilities-auth-helper": "^1.0.7",
     "@aws-sdk/client-location": "^3.621.0",
     "@aws-sdk/credential-providers": "^3.621.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
-    "rollup": "^3.22.0"
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "rollup": "^4.24.0"
   }
 }
