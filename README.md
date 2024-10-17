@@ -65,7 +65,7 @@ The APIs for the different client SDKs are grouped separately.
 
 ### [@amzn/geomaps-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geomaps-client/)
 
-The standalone Maps SDK commands are grouped a `maps` namespace, for example:
+The standalone Maps SDK commands are grouped into a `maps` namespace. For example:
 
 ```javascript
 // Create an authentication helper instance using an API key
@@ -82,7 +82,7 @@ const response = await client.send(command);
 
 ### [@amzn/geoplaces-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geoplaces-client/)
 
-The standalone Places SDK commands are grouped a `places` namespace, for example:
+The standalone Places SDK commands are grouped into a `places` namespace. For example:
 
 ```javascript
 // Create an authentication helper instance using an API key
@@ -99,7 +99,7 @@ const response = await client.send(command);
 
 ### [@amzn/georoutes-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-georoutes-client/)
 
-The standalone Routes SDK commands are grouped a `routes` namespace, for example:
+The standalone Routes SDK commands are grouped into a `routes` namespace. For example:
 
 ```javascript
 // Create an authentication helper instance using an API key
@@ -116,7 +116,7 @@ const response = await client.send(command);
 
 ### [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/)
 
-The Location SDK commands are under the top-level namespace, for example:
+The Location SDK commands are under the top-level namespace. For example:
 
 ```javascript
 // Create an authentication helper instance using an API key
