@@ -1,3 +1,9 @@
+# 1.1.0
+
+### ✨ Features and improvements
+
+- Added support for new standalone Maps, Places, and Routes SDKs
+
 # 1.0.2
 
 ### ✨ Features and improvements
