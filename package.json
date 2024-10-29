@@ -50,7 +50,7 @@
     "@amzn/geomaps-client": "file:temp_clients/amzn-geomaps-client-0.0.1.tgz",
     "@amzn/geoplaces-client": "file:temp_clients/amzn-geoplaces-client-0.0.1.tgz",
     "@amzn/georoutes-client": "file:temp_clients/amzn-georoutes-client-0.0.1.tgz",
-    "@aws/amazon-location-utilities-auth-helper": "^1.0.7",
+    "@aws/amazon-location-utilities-auth-helper": "file:temp_clients/aws-amazon-location-utilities-auth-helper-1.1.0.tgz",
     "@aws-sdk/client-location": "^3.621.0",
     "@aws-sdk/credential-providers": "^3.621.0"
   },
