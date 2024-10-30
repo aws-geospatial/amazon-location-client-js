@@ -6,14 +6,14 @@ import {
   withIdentityPoolId,
 } from "@aws/amazon-location-utilities-auth-helper";
 
-import * as maps from "@aws-sdk/geo-maps-client";
-import { GeoMapsClient } from "@aws-sdk/geo-maps-client";
+import * as maps from "@aws-sdk/client-geo-maps";
+import { GeoMapsClient } from "@aws-sdk/client-geo-maps";
 
-import * as places from "@aws-sdk/geo-places-client";
-import { GeoPlacesClient } from "@aws-sdk/geo-places-client";
+import * as places from "@aws-sdk/client-geo-places";
+import { GeoPlacesClient } from "@aws-sdk/client-geo-places";
 
-import * as routes from "@aws-sdk/geo-routes-client";
-import { GeoRoutesClient } from "@aws-sdk/geo-routes-client";
+import * as routes from "@aws-sdk/client-geo-routes";
+import { GeoRoutesClient } from "@aws-sdk/client-geo-routes";
 
 export {
   withAPIKey,
