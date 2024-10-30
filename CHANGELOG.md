@@ -1,3 +1,9 @@
+# 1.1.1
+
+### 🐞 Bug fixes
+
+- Fixed exports of Maps, Places, and Routes SDKs. They were getting exported as undefined.
+
 # 1.1.0
 
 ### ✨ Features and improvements
