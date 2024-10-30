@@ -1,6 +1,6 @@
 # Amazon Location JavaScript Client
 
-This is a distribution of the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) containing the standalone [Maps](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geomaps-client/), [Places](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geoplaces-client/), and [Routes](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-georoutes-client/) SDKs, the [Location SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/), our [authentication helper](https://github.com/aws-geospatial/amazon-location-utilities-auth-helper-js), and [credential providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) intended for use in browsers.
+This is a distribution of the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) containing the standalone [Maps](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-maps/), [Places](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-places/), and [Routes](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-routes/) SDKs, the [Location SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/location/), our [authentication helper](https://github.com/aws-geospatial/amazon-location-utilities-auth-helper-js), and [credential providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) intended for use in browsers.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Add the script to an HTML file for usage directly in the browser.
 
 ### Usage with modules
 
-We recommend using [@amzn/geomaps-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geomaps-client/), [@amzn/geoplaces-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geoplaces-client/), [@amzn/georoutes-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-georoutes-client/), [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) from the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) if possible to get the full benefit of the modularized AWS SDK.
+We recommend using [@aws-sdk/client-geo-maps](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-maps/), [@aws-sdk/client-geo-places](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-places/), [@aws-sdk/client-geo-routes](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-routes/), [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) from the [AWS SDK for JavaScript v3](https://github.com/aws/aws-sdk-js-v3) if possible to get the full benefit of the modularized AWS SDK.
 
 ## Usage
 
@@ -57,7 +57,7 @@ const response = await client.send(command);
 
 The APIs for the different client SDKs are grouped separately.
 
-### [@amzn/geomaps-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geomaps-client/)
+### [@aws-sdk/client-geo-maps](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-maps/)
 
 The standalone Maps SDK commands are grouped into a `maps` namespace. For example:
 
@@ -71,7 +71,7 @@ const command = new amazonLocationClient.maps.GetStaticMapCommand(input);
 const response = await client.send(command);
 ```
 
-### [@amzn/geoplaces-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geoplaces-client/)
+### [@aws-sdk/client-geo-places](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-places/)
 
 The standalone Places SDK commands are grouped into a `places` namespace. For example:
 
@@ -85,7 +85,7 @@ const command = new amazonLocationClient.places.GetPlaceCommand(input);
 const response = await client.send(command);
 ```
 
-### [@amzn/georoutes-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-georoutes-client/)
+### [@aws-sdk/client-geo-routes](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-routes/)
 
 The standalone Routes SDK commands are grouped into a `routes` namespace. For example:
 
@@ -99,7 +99,7 @@ const command = new amazonLocationClient.routes.CalculateRoutesCommand(input);
 const response = await client.send(command);
 ```
 
-### [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/)
+### [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/location/)
 
 The Location SDK commands are under the top-level namespace. For example:
 
@@ -113,7 +113,7 @@ const command = new amazonLocationClient.ListGeofencesCommand(input);
 const response = await client.send(command);
 ```
 
-Refer to [@amzn/geomaps-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geomaps-client/), [@amzn/geoplaces-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-geoplaces-client/), [@amzn/georoutes-client](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-amzn-georoutes-client/), [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) for further documentation.
+Refer to [@aws-sdk/client-geo-maps](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-maps/), [@aws-sdk/client-geo-places](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-places/), [@aws-sdk/client-geo-routes](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/geo-routes/), [@aws-sdk/client-location](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/location/) and [@aws-sdk/credential-providers](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-credential-providers/) for further documentation.
 
 ## Getting Help
 
