@@ -31,7 +31,7 @@ This example uses the Amazon Location Client to make a request that authenticate
 
 ```javascript
 // Create an authentication helper instance using an API key and region
-const authHelper = await amazonLocationClient.withAPIKey("<API Key>", "<Region>");
+const authHelper = amazonLocationClient.withAPIKey("<API Key>", "<Region>");
 
 const client = new amazonLocationClient.GeoRoutesClient(authHelper.getClientConfig());
 const input = { ... };
@@ -63,7 +63,7 @@ The standalone Maps SDK commands are grouped into a `maps` namespace. For exampl
 
 ```javascript
 // Create an authentication helper instance using an API key and region
-const authHelper = await amazonLocationClient.withAPIKey("<API Key>", "<Region>");
+const authHelper = amazonLocationClient.withAPIKey("<API Key>", "<Region>");
 
 const client = new amazonLocationClient.GeoMapsClient(authHelper.getClientConfig());
 const input = { ... };
@@ -77,7 +77,7 @@ The standalone Places SDK commands are grouped into a `places` namespace. For ex
 
 ```javascript
 // Create an authentication helper instance using an API key and region
-const authHelper = await amazonLocationClient.withAPIKey("<API Key>", "<Region>");
+const authHelper = amazonLocationClient.withAPIKey("<API Key>", "<Region>");
 
 const client = new amazonLocationClient.GeoPlacesClient(authHelper.getClientConfig());
 const input = { ... };
@@ -91,7 +91,7 @@ The standalone Routes SDK commands are grouped into a `routes` namespace. For ex
 
 ```javascript
 // Create an authentication helper instance using an API key and region
-const authHelper = await amazonLocationClient.withAPIKey("<API Key>", "<Region>");
+const authHelper = amazonLocationClient.withAPIKey("<API Key>", "<Region>");
 
 const client = new amazonLocationClient.GeoRoutesClient(authHelper.getClientConfig());
 const input = { ... };
@@ -105,7 +105,7 @@ The Location SDK commands are under the top-level namespace. For example:
 
 ```javascript
 // Create an authentication helper instance using an API key and region
-const authHelper = await amazonLocationClient.withAPIKey("<API Key>", "<Region>");
+const authHelper = amazonLocationClient.withAPIKey("<API Key>", "<Region>");
 
 const client = new amazonLocationClient.LocationClient(authHelper.getClientConfig());
 const input = { ... };

@@ -1,3 +1,9 @@
+# 1.2.0
+
+### ✨ Features and improvements
+
+- Updated to latest version of `amazon-location-utilities-auth-helper-js` which contains support for Amazon Cognito with standalone Maps SDK URLs and modified the `withAPIKey` method to be synchronous
+
 # 1.1.1
 
 ### 🐞 Bug fixes
