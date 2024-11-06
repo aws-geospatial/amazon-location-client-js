@@ -4,6 +4,7 @@
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import json from "@rollup/plugin-json";
 import commonjs from "@rollup/plugin-commonjs";
+import terser from "@rollup/plugin-terser";
 
 const banner = `
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
@@ -17,6 +18,7 @@ const plugins = [
   }),
   json(),
   commonjs(),
+  terser(),
 ];
 
 export default [
