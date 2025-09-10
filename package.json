@@ -40,7 +40,7 @@
     "./dist"
   ],
   "scripts": {
-    "clean": "rm -r dist",
+    "clean": "rm -rf dist",
     "test": "jest --collectCoverage --collectCoverageFrom=src/*.{mjs}",
     "build": "rollup -c",
     "prepare": "husky install",
