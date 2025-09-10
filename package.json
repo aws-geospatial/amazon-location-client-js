@@ -2,7 +2,7 @@
   "name": "@aws/amazon-location-client",
   "description": "Amazon Location Client Bundle",
   "license": "Apache-2.0",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "keywords": [],
   "author": {
     "name": "Amazon Web Services",
@@ -40,7 +40,7 @@
     "./dist"
   ],
   "scripts": {
-    "clean": "rm -r dist",
+    "clean": "rm -rf dist",
     "test": "jest --collectCoverage --collectCoverageFrom=src/*.{mjs}",
     "build": "rollup -c",
     "prepare": "husky install",
