@@ -65,7 +65,7 @@
     "@aws-sdk/client-geo-maps": "^3.683.0",
     "@aws-sdk/client-geo-places": "^3.683.0",
     "@aws-sdk/client-geo-routes": "^3.683.0",
-    "@aws/amazon-location-utilities-auth-helper": "^1.2.0"
+    "@aws/amazon-location-utilities-auth-helper": "^1.2.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.9",
