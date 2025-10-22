@@ -2,7 +2,7 @@
   "name": "@aws/amazon-location-client",
   "description": "Amazon Location Client Bundle",
   "license": "Apache-2.0",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "keywords": [],
   "author": {
     "name": "Amazon Web Services",
