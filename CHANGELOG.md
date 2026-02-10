@@ -1,3 +1,12 @@
+# 1.2.3
+
+### ✨ Features and improvements
+
+- Updated package dependencies
+  - Bumped `@aws-sdk/client-location`, `@aws-sdk/client-geo-maps`, `@aws-sdk/client-geo-places`, `@aws-sdk/client-geo-routes`, and `@aws-sdk/credential-providers` from 3.782.0/3.914.0 to 3.986.0
+  - Bumped `fast-xml-parser` from 5.2.5 to 5.3.4
+  - Bumped `js-yaml` from 3.14.1 to 3.14.2 (security fix)
+
 # 1.2.2
 
 ### ✨ Features and improvements
