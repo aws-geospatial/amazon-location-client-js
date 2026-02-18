@@ -1,3 +1,13 @@
+# 1.3.0
+
+### ✨ Features and improvements
+
+- Added support for the new `withCredentialProvider` authentication method from the auth helper, enabling custom credential providers (e.g. credentials from a custom backend or a different AWS authentication mechanism)
+- Updated `@aws/amazon-location-utilities-auth-helper` from 1.2.3 to 1.3.0
+- Updated package dependencies
+  - Bumped `@aws-sdk/client-location`, `@aws-sdk/client-geo-maps`, `@aws-sdk/client-geo-places`, `@aws-sdk/client-geo-routes`, and `@aws-sdk/credential-providers` from 3.986.0 to 3.992.0
+  - Bumped `fast-xml-parser` from 5.3.4 to 5.3.6 (via `@aws-sdk/xml-builder`) ([dependabot#10](https://github.com/aws-geospatial/amazon-location-client-js/security/dependabot/10))
+
 # 1.2.3
 
 ### ✨ Features and improvements
