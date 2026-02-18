@@ -3,6 +3,7 @@
 
 import {
   withAPIKey,
+  withCredentialProvider,
   withIdentityPoolId,
   GeoMapsClient,
   GeoPlacesClient,
@@ -14,6 +15,7 @@ import {
 
 test("can import authentication helper methods", () => {
   expect(withAPIKey).toBeDefined();
+  expect(withCredentialProvider).toBeDefined();
   expect(withIdentityPoolId).toBeDefined();
 });
 
