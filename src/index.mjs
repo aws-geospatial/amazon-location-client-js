@@ -6,6 +6,7 @@ export * from "@aws-sdk/credential-providers";
 
 import {
   withAPIKey,
+  withCredentialProvider,
   withIdentityPoolId,
 } from "@aws/amazon-location-utilities-auth-helper";
 
@@ -20,6 +21,7 @@ import { GeoRoutesClient } from "@aws-sdk/client-geo-routes";
 
 export {
   withAPIKey,
+  withCredentialProvider,
   withIdentityPoolId,
   GeoMapsClient,
   GeoPlacesClient,

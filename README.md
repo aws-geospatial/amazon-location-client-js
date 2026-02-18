@@ -53,6 +53,20 @@ const command = new amazonLocationClient.routes.CalculateRoutesCommand(input);
 const response = await client.send(command);
 ```
 
+### Custom Credential Provider
+
+For most use cases, API Key or Cognito authentication above will be sufficient. If you need to use a custom [credential provider](https://www.npmjs.com/package/@aws-sdk/credential-providers#credentials-provider) (e.g. credentials from a custom backend or a different AWS authentication mechanism), you can use `withCredentialProvider`.
+
+```javascript
+// Create an authentication helper instance using a custom credential provider
+const authHelper = amazonLocationClient.withCredentialProvider(credentialProvider, "<Region>");
+
+const client = new amazonLocationClient.GeoRoutesClient(authHelper.getClientConfig());
+const input = { ... };
+const command = new amazonLocationClient.routes.CalculateRoutesCommand(input);
+const response = await client.send(command);
+```
+
 ## Documentation
 
 The APIs for the different client SDKs are grouped separately.
