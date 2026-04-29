@@ -1,3 +1,17 @@
+# 1.3.1
+
+### ✨ Features and improvements
+
+- Updated package dependencies
+  - Bumped `@rollup/plugin-terser` from 0.4.4 to 1.0.0
+  - Bumped `fast-xml-parser` from 5.3.6 to 5.7.2 (via `@aws-sdk/xml-builder`)
+  - Bumped `serialize-javascript` from 6.0.2 to 7.0.5 (via `@rollup/plugin-terser`)
+  - Bumped `rollup` from 4.39.0 to 4.59.0
+  - Bumped `yaml` from 2.7.1 to 2.8.3
+  - Bumped `picomatch` from 4.0.2 to 4.0.4
+  - Bumped `minimatch` from 3.1.2 to 3.1.5
+  - Bumped `brace-expansion` from 1.1.12 to 1.1.13
+
 # 1.3.0
 
 ### ✨ Features and improvements
