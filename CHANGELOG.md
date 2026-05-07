@@ -1,3 +1,14 @@
+# 1.3.2
+
+### 🐞 Bug fixes
+
+- Fixed package configuration issues:
+  - Updated Node.js engine requirement from 16.x to 18.x (16.x reached EOL September 2023)
+  - Removed invalid `module` field pointing to unpublished `src/` directory
+  - Added `sideEffects: false` for better tree-shaking support
+  - Removed unused husky and lint-staged dependencies
+  - Rebuilt dist to include `withCredentialProvider` export in CJS bundle (was missing despite being in source)
+
 # 1.3.1
 
 ### ✨ Features and improvements
