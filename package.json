@@ -61,6 +61,6 @@
     "@vitest/coverage-v8": "^4.1.10",
     "npm-run-all2": "^9.0.2",
     "rollup": "^4.24.0",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.12"
   }
 }
